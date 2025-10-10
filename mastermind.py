@@ -73,7 +73,7 @@ def jugar_mastermind():
         print(f"\n--- Intento {MAX_INTENTOS - intentos_restantes + 1} de {MAX_INTENTOS} ---")
         
         # 1. Entrada del Jugador
-        entrada = input(f"Ingresa {LONGITUD_CODIGO} colores separados por espacio (ej. ROJO AZUL VERDE AMARILLO): ").upper()
+        entrada = input(f"Ingresa {LONGITUD_CODIGO} colores separados por un espacio [ROJO, AZUL, AMARILLO, BLANCO, CAFE, VERDE, NEGRO, NARANJO]: ").upper()
         intento_jugador = entrada.split()
         
         # 2. Validación
