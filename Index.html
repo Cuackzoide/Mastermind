@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Code Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="selector-nivel">
+        <strong>Selecciona la dificultad:</strong>
+        <select id="select-nivel" onchange="iniciarNivel(NIVELES[this.value])">
+            <option value="FACIL">Fácil</option>
+            <option value="MEDIO">Medio</option>
+            <option value="DIFICIL">Difícil</option>
+            <option value="EXPERTO">Experto</option>
+        </select>
+    </div>    
+    <div id="contenedor-principal"> 
+        <div id="controles">
+            <h1>Secret Code </h1>
+            <p id="mensaje"></p>
+            <p id="pistas"></p>
+            <h3>Decifra el código secreto:</h3>
+            <div id="paleta-colores">
+            </div>    
+                <h3>Tu Combinación Actual:</h3>
+            <div id="intento-actual">
+                <div class="slot-intento" data-index="0"></div>
+                <div class="slot-intento" data-index="1"></div>
+                <div class="slot-intento" data-index="2"></div>
+                <div class="slot-intento" data-index="3"></div>
+            </div>
+            <button id="btn-enviar">ENVIAR INTENTO</button>
+            <button id="btn-borrar">BORRAR</button>
+        </div>
+        <div id="tablero-juego">
+            </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
