@@ -11,7 +11,7 @@ Este proyecto representa la digitalización del juego de mesa y desafío de lóg
 Si consigues blancos, significa que acertaste el color. Si consigues negros, significa que acertaste tambien la posición!.
 * **Objetivo:** Tu elección sea identica al codigo secreto, obteniendo los 4 pines negros para ganar!.
 
-### II. Interfaz Web JavaScript (V2)
+## Interfaz Web JavaScript (V2)
 
 * **Lenguajes/Frameworks:** **HTML5, CSS3, JavaScript**
 * **Proceso Clave:** **Transpilación y Refactorización** de la lógica *core* de Python a JavaScript.
