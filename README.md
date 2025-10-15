@@ -1,5 +1,7 @@
 # 💻 Mastermind: De analogo a digital.
 Este proyecto representa la digitalización del juego de mesa y desafío de lógica "Mastermind", migrando el algoritmo inicial de **Python** a una interfaz web interactiva desarrollada con tecnologías web **HTML, CSS, y JavaScript**.
+### Despliegue GitHub Pages:
+[Mastermind demo](https://cuackzoide.github.io/Mastermind/)
 
 ## Desarrollo de Lógica Core (V1)
 
