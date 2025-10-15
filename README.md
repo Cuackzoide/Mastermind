@@ -21,3 +21,6 @@ Si consigues blancos, significa que acertaste el color. Si consigues negros, sig
 ## 🚀 Pruebas y QA
 Se realizaron **pruebas funcionales (QA)** en el entorno del navegador para garantizar la correcta ejecución de la lógica, la interactividad del tablero y la precisión del *feedback* tras cada intento.
 Puedes descomentar la linea 56 del archivo *script.js* para obtener un *console.log* del resultado y comprobar las iteraciones de *random*.
+
+![Captura de juego](assets/capture.png)
+![Selector de niveles](assets/levels.png)
