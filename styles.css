@@ -1,250 +1,247 @@
 body {
-    font-family: 'Arial Black', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+  font-family: "Arial Black", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
 }
 
 h1 {
-    color: #FFFF; /* Blanco para el título principal */
-    font-size: 3em;
-    text-shadow: 0 0 8px rgba(0, 255, 255, 1); /* Brillo neón */
-    margin-bottom: 25px;
-    letter-spacing: 2px;
+  color: #ffff; /* Blanco para el título principal */
+  font-size: 3em;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 1); /* Brillo neón */
+  margin-bottom: 25px;
+  letter-spacing: 2px;
 }
 
 h3 {
-    color: #c0c0c0; /* Gris claro para subtítulos */
-    margin-top: 20px;
-    margin-bottom: 15px;
+  color: #c0c0c0; /* Gris claro para subtítulos */
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 hr {
-    border: none;
-    border-top: 2px solid #555; /* Línea divisoria más robusta */
-    margin: 20px 0;
+  border: none;
+  border-top: 2px solid #555; /* Línea divisoria más robusta */
+  margin: 20px 0;
 }
 
 #contenedor-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%; /* Ocupa más ancho */
-    max-width: 650px; /* Un poco más ancho que antes */
-    padding-bottom: 50px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%; /* Ocupa más ancho */
+  max-width: 650px; /* Un poco más ancho que antes */
+  padding-bottom: 50px;
 }
 
 /* --- SELECTOR DE NIVEL --- */
 #selector-nivel {
-    background-color: #3a3a3a; /* Fondo oscuro para el selector */
-    border: 2px solid #555; /* Borde más marcado */
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra para profundidad */
+  background-color: #3a3a3a; /* Fondo oscuro para el selector */
+  border: 2px solid #555; /* Borde más marcado */
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
 }
 
 #select-nivel {
-    background-color: #555; /* Fondo oscuro para el select */
-    color: #e0e0e0; /* Texto claro */
-    border: 1px solid #777;
-    padding: 5px 8px;
-    border-radius: 3px;
-    margin-left: 10px;
-    cursor: pointer;
+  background-color: #555; /* Fondo oscuro para el select */
+  color: #e0e0e0; /* Texto claro */
+  border: 1px solid #777;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 /* --- TABLERO DE JUEGO (Historial) --- */
 #tablero-juego {
-    display: flex;
-    flex-direction: column; 
-    border: 5px solid #000; /* Borde muy grueso y oscuro */
-    border-radius: 8px;
-    padding: 15px; /* Más padding interno */
-    background-color: #666; /* Fondo gris oscuro para el tablero */
-    width: 100%;
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.8); /* Sombra interna para efecto de profundidad */
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000; /* Borde muy grueso y oscuro */
+  border-radius: 8px;
+  padding: 15px; /* Más padding interno */
+  background-color: #666; /* Fondo gris oscuro para el tablero */
+  width: 100%;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8); /* Sombra interna para efecto de profundidad */
 }
 
 .fila-mastermind {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0; /* Más padding vertical */
-    border-bottom: 1px solid #666; /* Separador más notorio */
-    opacity: 0.6; /* Filas inactivas más oscuras */
-    transition: opacity 0.3s, background-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Más padding vertical */
+  border-bottom: 1px solid #666; /* Separador más notorio */
+  opacity: 0.6; /* Filas inactivas más oscuras */
+  transition: opacity 0.3s, background-color 0.3s;
 }
 
 .fila-mastermind:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .fila-activa {
-    opacity: 1; 
-    background-color: #5a5a5a; /* Fondo ligeramente más claro para la fila activa */
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Brillo al activar */
+  opacity: 1;
+  background-color: #5a5a5a; /* Fondo ligeramente más claro para la fila activa */
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Brillo al activar */
 }
 
 /* --- SLOTS DE COLORES (HISTORIAL) --- */
 .grupo-slots {
-    display: flex;
-    text-align: center;
-    gap: 12px; /* Espacio entre slots */
+  display: flex;
+  text-align: center;
+  gap: 12px; /* Espacio entre slots */
 }
 
 .slot-intento-historial {
-    display: inline-block;
-    width: 45px; /* Un poco más grandes */
-    height: 45px;
-    border: 3px solid #999; /* Borde más grueso y oscuro */
-    border-radius: 50%;
-    background-color: #333; /* Fondo oscuro para slots vacíos */
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.7); /* Profundidad en el slot */
+  display: inline-block;
+  width: 45px; /* Un poco más grandes */
+  height: 45px;
+  border: 3px solid #999; /* Borde más grueso y oscuro */
+  border-radius: 50%;
+  background-color: #333; /* Fondo oscuro para slots vacíos */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7); /* Profundidad en el slot */
 }
 
 /* --- SLOTS DE RESPUESTA (FEEDBACK) --- */
 .grupo-respuestas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 6px; /* Más espacio */
-    padding-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6px; /* Más espacio */
+  padding-left: 15px;
 }
 
 .slot-respuesta {
-    width: 20px; /* Un poco más grandes */
-    height: 20px;
-    border-radius: 50%;
-    background-color: #333; /* Fondo oscuro por defecto */
-    border: 2px solid #666; /* Borde más grueso */
+  width: 20px; /* Un poco más grandes */
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333; /* Fondo oscuro por defecto */
+  border: 2px solid #666; /* Borde más grueso */
 }
 
 /* --- CONTROLES (Parte Superior) --- */
 #controles {
-    width: 100%;
-    background-color: #666; /* Fondo claro */
-    padding: 20px;
-    margin-top: 20px; /* Margen para separar del tablero */
-    border: 5px double #666; /* Borde grueso */
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0,0,0,0.8); /* Sombra para profundidad */
+  width: 100%;
+  background-color: #666; /* Fondo claro */
+  padding: 20px;
+  margin-top: 20px; /* Margen para separar del tablero */
+  border: 5px double #666; /* Borde grueso */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Sombra para profundidad */
 }
 
 #intento-actual {
-    display: flex;
-    justify-content: center;
-    gap: 18px; /* Más espacio */
-    margin: 15px 0 25px 0; /* Más margen */
+  display: flex;
+  justify-content: center;
+  gap: 18px; /* Más espacio */
+  margin: 15px 0 25px 0; /* Más margen */
 }
 
 .slot-intento {
-    width: 50px; /* Más grandes */
-    height: 50px;
-    border: 4px double #666;
-    border-radius: 50%;
-    background-color: #eee; /* Fondo claro para slots vacíos */
-    transition: background-color 0.2s;
-    box-shadow: inset 0 0 8px rgba(0, 255, 255, 1); /* Brillo interno */
+  width: 50px; /* Más grandes */
+  height: 50px;
+  border: 4px double #666;
+  border-radius: 50%;
+  background-color: #eee; /* Fondo claro para slots vacíos */
+  transition: background-color 0.2s;
+  box-shadow: inset 0 0 8px rgba(0, 255, 255, 1); /* Brillo interno */
 }
 
 /* --- PALETA DE COLORES --- */
 #paleta-colores {
-    display: flex; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-    gap: 12px; /* Espacio entre pines */
-    margin-top: 20px;
-    padding: 10px; /* Un poco de padding interno */
-    background-color: #2a2a2a; /* Fondo más oscuro para la paleta */
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px; /* Espacio entre pines */
+  margin-top: 20px;
+  padding: 10px; /* Un poco de padding interno */
+  background-color: #2a2a2a; /* Fondo más oscuro para la paleta */
+  border-radius: 5px;
 }
 
 .color-pin {
-    flex-shrink: 0; 
-    width: 45px; /* Un poco más grandes */
-    height: 45px;
-    border-radius: 50%;
-    border: 4px double #666; /* Borde fuerte */
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 3px black; /* Sombra más pronunciada */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra exterior */
-    transition: transform 0.1s, box-shadow 0.2s;
+  flex-shrink: 0;
+  width: 45px; /* Un poco más grandes */
+  height: 45px;
+  border-radius: 50%;
+  border: 4px double #666; /* Borde fuerte */
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px black; /* Sombra más pronunciada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra exterior */
+  transition: transform 0.1s, box-shadow 0.2s;
 }
 
 .color-pin:active {
-    transform: scale(0.9); /* Más pronunciado */
-    box-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Brillo al presionar */
+  transform: scale(0.9); /* Más pronunciado */
+  box-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Brillo al presionar */
 }
 
 /* --- BOTONES ENVIAR / BORRAR --- */
-#btn-enviar, #btn-borrar {
-    display: inline-block;
-    padding: 15px 30px; /* Más grandes */
-    border: 3px solid #000; /* Borde negro fuerte */
-    border-radius: 8px; /* Bordes más cuadrados */
-    cursor: pointer;
-    font-size: 1 em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+#btn-enviar,
+#btn-borrar {
+  display: inline-block;
+  padding: 15px 30px; /* Más grandes */
+  border: 3px solid #000; /* Borde negro fuerte */
+  border-radius: 8px; /* Bordes más cuadrados */
+  cursor: pointer;
+  font-size: 1 em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #btn-enviar {
-    background-color: #00f; /* Azul neón */
-    color: #fff; /* Texto claro */
+  background-color: #00f; /* Azul neón */
+  color: #fff; /* Texto claro */
 }
 
 #btn-enviar:hover:not(:disabled) {
-    background-color: #33CCFF;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 1); /* Brillo intenso */
+  background-color: #33ccff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 1); /* Brillo intenso */
 }
 
 #btn-enviar:disabled {
-    background-color: #666;
-    color: #ccc;
-    cursor: not-allowed;
-    box-shadow: none;
+  background-color: #666;
+  color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 #btn-borrar {
-    background-color: #888; /* Gris oscuro para borrar */
-    color: #222;
+  background-color: #888; /* Gris oscuro para borrar */
+  color: #222;
 }
 
 #btn-borrar:hover {
-    background-color: #a0a0a0;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  background-color: #a0a0a0;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 /* Mensaje de estado */
 #mensaje {
-    color: #e0e0e0;
-    font-size: 1.1em;
-    margin-top: 15px;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Pequeño brillo */
+  color: #e0e0e0;
+  font-size: 1.1em;
+  margin-top: 15px;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Pequeño brillo */
 }
 #pistas {
-    color: #e0e0e0;
-    font-size: 1.1em;
-    margin-top: 15px;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Pequeño brillo */
+  color: #e0e0e0;
+  font-size: 1.1em;
+  margin-top: 15px;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Pequeño brillo */
 }
 .slot-respuesta {
-    background-color: #666;
-    border: 2px solid #eee; /* Borde más claro para contraste */
-}
-.slot-respuesta {
-    background-color: #666;
-    border: 2px solid #000; /* Borde oscuro para contraste */
+  background-color: #666;
+  border: 2px solid #eee; /* Borde más claro para contraste */
 }
